@@ -1,7 +1,8 @@
 var numerDia;
-const date=new Date();
+var date=new Date();
 
-function getDay(numerDia=date.getDate()){
+function getDay(numerDia=date.getDay()){
+    console.log(numerDia);  
     let day;
     switch(numerDia){
         case 0:
@@ -28,5 +29,5 @@ function getDay(numerDia=date.getDate()){
 
     }
     console.log(day);
-    
+    document.querySelector("#diadehoy").textContent=day;
 }
